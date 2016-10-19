@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_radio_stations"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.evgenyvyaz.secondyandexchallenge.activity.RadioStationsActivity">
+    <include layout="@layout/layout_toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Выберите радио станцию"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/radioSkazkiBTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Детские сказки" />
+
+    <Button
+        android:id="@+id/childRadioBTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:text="Детские песни" />
+
+    <Button
+        android:id="@+id/radioRecordBTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Колыбельная" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/linkET"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:textSize="14sp"
+            android:background="@drawable/edittext_stroke"
+            android:hint="Или вставьте ссылку на радиостанцию"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/okBTN"
+            android:text="ok"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>
